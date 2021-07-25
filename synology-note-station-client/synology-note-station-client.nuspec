@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>synology-note-station-client</id>
-    <version>2.2.1-553</version>
+    <version>2.2.1.553</version>
     <packageSourceUrl>https://github.com/Mr1BitL8r/Chocolatey-synology-note-station-client</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Mr1BitL8r</owners>
