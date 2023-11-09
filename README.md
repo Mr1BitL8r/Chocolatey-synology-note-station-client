@@ -2,7 +2,7 @@
 This is just a [Chocolatey community](https://community.chocolatey.org/) package for installing and uninstalling the Synology Note Station Client on Windows.
 
 ## How to upgrade for a newer version
-If there is a new version available of the Synology Note Station Client:
+If there is a new version available of the Synology Note Station Client, which you can e.g. find at https://www.synology.com/de-de/releaseNote/NoteStationClient please perform the following steps:
 1. Navigate into the _sub_directory: **synology-note-station-client/tools**
 2. Adjust the file **chocolateyinstall.ps1**, so that entries
     * **$url** is set to the download URL of the 32-bit Setup.exe
@@ -12,7 +12,7 @@ If there is a new version available of the Synology Note Station Client:
     _Hint_: You can find the download links and MD5 checksums e.g. on https://www.synology.com/de-de/support/download/DS716+II?version=7.0#utilities when clicking on the "Download" button next to the "Synology Note Station Client".
 3. Navigate into the parent directory: **synology-note-station-client**
 4. Adjust the file **synology-note-station-client.nuspec**, so that the
-    * <version> is correct, but make sure **NOT** to use the '-', so e.g. "2.2.2-609" needs to be "2.2.2609" for chocolatey.
+    * <version> is correct, but make sure **NOT** to use the '-', so e.g. "2.2.4-703" needs to be "2.2.4.703" for chocolatey.
     * <copyright> is set to the correct year.
 5. Open a PowerShell with **administrator** privileges and navigate into the folder **synology-note-station-client** that is containing the file **synology-note-station-client.nuspec**
     * Create the package for chocolatey via executing the command: _choco pack_
@@ -21,4 +21,4 @@ If there is a new version available of the Synology Note Station Client:
     * Upgrading it, e.g. via executing: _choco **upgrade** synology-note-station-client -dv -s ._
     * Uninstalling it, e.g. via executing: _choco **uninstall** synology-note-station-client -dv -s ._
     * Installing it, e.g. via executing: _choco **install** synology-note-station-client -dv -s ._
-7. Push the package to the chocolatey community repository: _choco push .\synology-note-station-client.**2.2.2.609**.nupkg -s https://push.chocolatey.org/_
+7. Push the package to the chocolatey community repository: _choco push .\synology-note-station-client.**2.2.4.703**.nupkg -s https://push.chocolatey.org/_
