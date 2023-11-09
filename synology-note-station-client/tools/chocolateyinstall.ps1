@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://global.download.synology.com/download/Utility/NoteStationClient/2.2.2-609/Windows/i686/synology-note-station-client-2.2.2-609-win-x86-Setup.exe'
-$url64      = 'https://global.download.synology.com/download/Utility/NoteStationClient/2.2.2-609/Windows/x86_64/synology-note-station-client-2.2.2-609-win-x64-Setup.exe'
+$url        = 'https://global.synologydownload.com/download/Utility/NoteStationClient/2.2.4-703/Windows/i686/synology-note-station-client-2.2.4-703-win-x86-Setup.exe'
+$url64      = 'https://global.synologydownload.com/download/Utility/NoteStationClient/2.2.4-703/Windows/x86_64/synology-note-station-client-2.2.4-703-win-x64-Setup.exe'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
@@ -11,9 +11,9 @@ $packageArgs = @{
 
   softwareName  = 'Synology Note Station Client*'
 
-  checksum      = '16690c27a366bfdf76b09f35266a45b7'
+  checksum      = 'db036480e198c7b0d79a439f82029fec'
   checksumType  = 'md5'
-  checksum64    = 'c8c2b16eb740be2c1a82a212f64e8d26'
+  checksum64    = '7966cbb341290f826bbfa89e2592a1f8'
   checksumType64= 'md5'
 
   silentArgs   = '/S'
